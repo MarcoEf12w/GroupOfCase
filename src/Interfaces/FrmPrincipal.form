@@ -46,20 +46,20 @@
                       <Component id="btnListadoMercaderia" max="32767" attributes="0"/>
                       <Component id="btnVentaProducto" alignment="0" pref="168" max="32767" attributes="0"/>
                       <Component id="btnProductos" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btnClientes" alignment="0" max="32767" attributes="0"/>
                       <Component id="btnProveedor" alignment="0" max="32767" attributes="0"/>
                       <Component id="btnUsuarios" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
+              <Component id="btnClientes" alignment="1" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
                   <Component id="btnListadoMercaderia" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btnVentaProducto" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btnProductos" min="-2" max="-2" attributes="0"/>
@@ -67,9 +67,9 @@
                   <Component id="btnClientes" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btnProveedor" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btnUsuarios" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="259" max="32767" attributes="0"/>
+                  <EmptySpace pref="373" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
