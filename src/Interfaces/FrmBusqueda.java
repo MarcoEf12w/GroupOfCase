@@ -6,9 +6,11 @@
 package Interfaces;
 
 import Clases.Cliente;
+import Clases.FacturaCab;
 import Clases.Producto;
 import Clases.Proveedor;
 import DAO.ClienteDAO;
+import DAO.FacturaCabDAO;
 import DAO.ProductoDAO;
 import DAO.ProveedorDAO;
 import java.awt.Dialog;
@@ -274,6 +276,30 @@ FrmPrincipal frm ;
                 }
                 tableBusqueda.setModel(modelo);
                 break;
+            case "VENTA-FACTURA":
+                List<FacturaCab> lstFacturaCab;
+                if (cmbBusquedaCriterio.getSelectedIndex() == 0) {
+                    Integer codigo = 0;
+                    try {
+                        codigo = Integer.parseInt(txtBusquedaDescripcion.getText().toString());
+                    } catch (Exception e) {
+                        codigo = 0;
+                    }
+                    lstFacturaCab = FacturaCabDAO.obtenerFacturaPorCodigo(codigo);
+                } else {
+                    lstFacturaCab = FacturaCabDAO.obtenerFacturaPorNombreCliente(busqueda);
+                }
+                
+                for (int i = 0; i < lstFacturaCab.size(); i++) {
+                    Object[] obj = new Object[3];
+                    obj[0] = lstFacturaCab.get(i).getId();
+                    obj[1] = lstFacturaCab.get(i).getClienteId() +" "+ lstFacturaCab.get(i).getFecha() +" "+ lstFacturaCab.get(i).getTotal();
+                    obj[2] = lstFacturaCab.get(i);
+                    modelo.addRow(obj);
+                }
+                tableBusqueda.setModel(modelo);
+                
+                break;
     
             default:
             //throw new AssertionError();
@@ -293,7 +319,9 @@ FrmPrincipal frm ;
             case "VENTA-PRODUCTO":
                frm.productoBuscar = (Producto) tableBusqueda.getValueAt(fila, 2);
                 break;
-    
+            case "VENTA-FACTURA":
+                frm.facturaCabBuscar = (FacturaCab) tableBusqueda.getValueAt(fila, 2);
+                break;
             default:
             //throw new AssertionError();
         }

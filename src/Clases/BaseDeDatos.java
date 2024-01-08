@@ -21,7 +21,7 @@ import java.util.logging.Logger;
 public class BaseDeDatos {
     private  static Connection con;
     
-    private final static String SERVIDOR = "localhost";
+    private final static String SERVIDOR = "192.168.100.144";
     private final static String DATABASE = "ventasDB";
     private final static String USUARIO = "mpolo";
     private final static String PUERTO = "3306";

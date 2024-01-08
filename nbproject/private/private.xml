@@ -3,11 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase/src/DAO/ClienteDAO.java</file>
-            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase/src/Interfaces/FrmLogin.java</file>
-            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase/src/Interfaces/FrmBusqueda.java</file>
-            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase/src/Interfaces/FrmPrincipal.java</file>
-            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase/src/DAO/ProveedorDAO.java</file>
+            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase-main/src/Interfaces/FrmBusqueda.java</file>
+            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase-main/src/DAO/ClienteDAO.java</file>
+            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase-main/src/DAO/FacturaDetDAO.java</file>
+            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase-main/src/Clases/FacturaDet.java</file>
+            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase-main/src/DAO/FacturaCabDAO.java</file>
+            <file>file:/home/mpolo/NetBeansProjects/GroupOfCase-main/src/Interfaces/FrmPrincipal.java</file>
         </group>
     </open-files>
 </project-private>
